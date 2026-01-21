@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Pro Page</title>
+    <style>
+        /* Aapki purani CSS yahan hogi, maine placeholder styles diye hain */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            width: 300px;
+            color: white;
+        }
+        button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div id="welcomeSection">
+            <h1 style="color: #00f2fe;">HELLO, I'M LEARNING!</h1>
+            <p>This is my first professional web layout. Everything is centered and fully responsive.</p>
+            <br>
+            <button onclick="showDetails()">Click Me!</button>
+        </div>
+
+        <div id="infoDisplay" style="display: none;">
+            <h2 style="color: #00f2fe;">My Profile</h2>
+            <p><strong>Name:</strong> Bilal Qureshi</p>
+            <p><strong>Technology:</strong> Software</p>
+            <p><strong>Age:</strong> 16</p>
+            <hr style="border: 0.5px solid rgba(255,255,255,0.3); margin: 20px 0;">
+            <p style="font-size: 0.9em; font-style: italic;">I want to become a software engineer and started in 2026</p>
+        </div>
+    </div>
+
+    <script>
+        function showDetails() {
+            // Purane section ko chhupana
+            document.getElementById('welcomeSection').style.display = 'none';
+            
+            // Naye info section ko dikhana
+            document.getElementById('infoDisplay').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
